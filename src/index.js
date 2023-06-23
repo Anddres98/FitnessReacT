@@ -1,17 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*const element = document.createElement('h1')
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+element.innerText = 'Hello react'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById('root')
+
+container.appendChild(element)*/
+
+import React from 'react'
+import ReactDOM  from 'react-dom'
+import Card from './components/Card'
+
+/*
+const user = {
+    firtsName: 'Andres',
+    lastName: 'Pardo',
+    avartar: ''
+}
+
+function getName(user){
+    return `${user.firtsName} ${user.lastName} `
+}
+
+function getGreeting(user){
+    if (user){
+        return <h1> Hello {getName(user)} </h1>
+    }
+    return <h1> Hello Stranger </h1>
+}
+
+const name = 'Andres'
+//Para crear un const con hijo se hace 
+const element = (
+        <div>
+            <h1> {getGreeting(user)} </h1>
+            <img />
+        </div>
+)
+
+*/
+
+const container = document.getElementById('root')
+
+// el metodo render recibe dos parametros __Que__, __DONDE___ que renderear  y a dodne
+//Para render un componente se tiene que escribir
+// dentro de una </> para funcionar
+ReactDOM.render(<Card/>, container)
