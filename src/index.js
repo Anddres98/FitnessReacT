@@ -8,9 +8,9 @@ container.appendChild(element)*/
 
 import React from 'react'
 import ReactDOM  from 'react-dom'
-import Card from './components/Card'
 import 'bootstrap/dist/css/bootstrap.css'
 import exerciceImg from './images/musculo.png'
+import Exercices from './pages/Exercices'
 
 /*
 const user = {
@@ -46,10 +46,5 @@ const container = document.getElementById('root')
 // el metodo render recibe dos parametros __Que__, __DONDE___ que renderear  y a dodne
 //Para render un componente se tiene que escribir
 // dentro de una </> para funcionar
-ReactDOM.render(<Card
-                    title="Technique Guides"
-                    description="Learn amazing street workout and calisthenics"
-                    img= "${exerciceImg}"
-                    leftColor="#A74CF2"
-                    rightColor="#617BFB"              
-                    />, container)
+
+ReactDOM.render(<Exercices/>, container)
