@@ -9,8 +9,7 @@ container.appendChild(element)*/
 import React from 'react'
 import ReactDOM  from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css'
-import exerciceImg from './images/musculo.png'
-import Exercices from './pages/Exercices'
+import App from './components/App'
 
 /*
 const user = {
@@ -47,4 +46,4 @@ const container = document.getElementById('root')
 //Para render un componente se tiene que escribir
 // dentro de una </> para funcionar
 
-ReactDOM.render(<Exercices/>, container)
+ReactDOM.render(<App/>, container)

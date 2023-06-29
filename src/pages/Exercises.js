@@ -45,7 +45,7 @@ class Exercices extends React.Component{
                     exercises= {this.state.data}
                 />     
                 <AgregarCard
-                
+                    
                 />
             </div>
         )

@@ -1,12 +1,14 @@
 import React from "react";
 import imageAdd from "../images/add.avif"
 import './styles/Card.css'
+import './styles/add.css'
+import {Link} from 'react-router-dom'
 
 function AgregarCard(props){
     return(
-        <div className="AddCard-down">
-            <img src= {imageAdd} />
-        </div>
+        <Link to="/exercises/new">
+            <img src={imageAdd} className="AddCard"/>
+        </Link>
     )
 }
 
