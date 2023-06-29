@@ -1,9 +1,18 @@
 import React from 'react'
 
 class ExercicesNew extends React.Component{
+    
+    handleClick = () =>{
+        console.log('clicked')
+    }
+    
+    //react event 
     render(){
-
-        return 'ExerciseNew'
+        return (
+            <button onClick={this.handleClick}>
+                Send
+            </button>
+        )
     }
 }
 
